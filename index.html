@@ -1,89 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <style type="text/css">
-      body { font-family: 'Roboto', sans-serif; 
-        background: #FFD580;
-      padding: 0px 20px 20px 40px; }
-      h2{margin-bottom: 0px;}
-      p{ margin-bottom: 0px; margin-top: 5px;}
-    </style>
-  </head>
-  <body>
-    <h1>React</h1>
-     <h2>React Components</h2>
-      <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML</p>
-      <p>When creating a React component, the component's name MUST start with an upper case letter.</p>
-      <h2>What is JSX?</h2>
-      <p>JSX stands for JavaScript XML. </p>
-      <p>JSX allows us to write HTML in React.</p>
-      <p>JSX makes it easier to write and add HTML in React.</p>
-      <h2>Coding JSX</h2>
-      <p>JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.</p>
-      <p>JSX converts HTML tags into react elements.</p>
-      <p></p>
 
-    <h2>Props</h2>
-    <p>
-      Props stand for "Properties." They are read-only components. It is an
-      object which stores the value of attributes of a tag and work similar to
-      the HTML attributes.
-    </p>
-    <p>It gives a way to pass data from one component to other components.</p>
-    <p>
-      It is similar to function arguments. Props are passed to the component in
-      the same way as arguments passed in a function.
-    </p>
-<h2>State</h2>
-<p>State is similar to props, but it is private and fully controlled by the component. </p>
-<p>We can create state only in class component. </p>
-<p>It is posible to update the state/Modify the state.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #FFD580;
+
+    }
 
 
 
-    <h2>React Hooks</h2>
-    <p>
-      Hooks are the new feature introduced in the React 16.8 version. It allows
-      you to use state and other React features without writing a class.
-    </p>
-    <h2>When to use a Hooks</h2>
-    <p>
-      If you write a function component, and then you want to add some state to
-      it, previously you do this by converting it to a class. But, now you can
-      do it by using a Hook inside the existing function component.
-    </p>
-    <p></p>
+    p {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
 
-    
-    <h2>Callback function.</h2>
-    <p></p>
-    <p></p>
-          <p></p>
-            <p></p>
-              <p></p>
-                <p></p>
-                  <p></p>
-                    <p></p>
-            <p></p>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
+    table tr td {
+      padding-right: 10px;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0px 20px 20px 40px;
+    }
+
+    .tab-pane {
+      padding-top: 20px;
+    }
+
+    h4 {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Dynamic Tabs</h2>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">React</a></li>
+      <li><a data-toggle="tab" href="#menu1">HTML</a></li>
+      <li><a data-toggle="tab" href="#menu2">CSS</a></li>
+      <li><a data-toggle="tab" href="#menu3">JavaScript</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h4>What is React?</h4>
+        <p>React is a declarative, efficient, flexible open source front-end JavaScript library developed by Facebook in
+          2011. It follows the component-based approach for building reusable UI components, especially for single page
+          application. It is used for developing interactive view layer of web and mobile apps. It was created by Jordan
+          Walke, a software engineer at Facebook. It was initially deployed on Facebook's News Feed section in 2011 and
+          later used in its products like WhatsApp & Instagram.</p>
+        <h4>React Components</h4>
+        <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions,
+          but work in isolation and return HTML</p>
+        <p>When creating a React component, the component's name MUST start with an upper case letter.</p>
+        <h4>What is JSX?</h4>
+        <p>JSX stands for JavaScript XML. </p>
+        <p>JSX allows us to write HTML in React.</p>
+        <p>JSX makes it easier to write and add HTML in React.</p>
+        <h4>Coding JSX</h4>
+        <p>JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()
+          and/or appendChild() methods.</p>
+        <p>JSX converts HTML tags into react elements.</p>
+        <p></p>
+        <h4>State</h4>
+        <p>State is similar to props, but it is private and fully controlled by the component. </p>
+        <p>We can create state only in class component. </p>
+        <p>It is posible to update the state/Modify the state.</p>
+
+        <h3>Props</h3>
+        <p>
+          Props stand for "Properties." They are read-only components. It is an
+          object which stores the value of attributes of a tag and work similar to
+          the HTML attributes. </p>
+        <p>It gives a way to pass data from one component to other components.</p>
+        <p>
+          It is similar to function arguments. Props are passed to the component in
+          the same way as arguments passed in a function. </p>
+        <h3>State Vs. Props</h3>
+        <table>
+          <tr>
+            <td>
+              <h4>Props</h4>
+            </td>
+            <td>
+              <h4>State</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>Props are read-only.</td>
+            <td>State changes can be asynchronous.</td>
+          </tr>
+          <tr>
+            <td>Props are immutable.</td>
+            <td>State is mutable.</td>
+          </tr>
+          <tr>
+            <td style="padding-right: 10px;">Props allow you to pass data from one component to other components as an
+              argument.</td>
+            <td>State holds information about the components.</td>
+          </tr>
+          <tr>
+            <td>Props can be accessed by the child component.</td>
+            <td>State cannot be accessed by child components.</td>
+          </tr>
+          <tr>
+            <td>Stateless component can have Props.</td>
+            <td>Stateless components cannot have State.</td>
+          </tr>
+        </table>
+
+        <h3>React Hooks</h3>
+        <p>
+          Hooks are the new feature introduced in the React 16.8 version. It allows
+          you to use state and other React features without writing a class.
+        </p>
+        <h3>When to use a Hooks</h3>
+        <p>
+          If you write a function component, and then you want to add some state to
+          it, previously you do this by converting it to a class. But, now you can
+          do it by using a Hook inside the existing function component.
+        </p>
+        <p></p>
+
+
+        <h3>Callback function.</h3>
+        <p></p>
+
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>Menu 2</h3>
+        <h4>What is a CSS selector?</h4>
+        <ul>
+          <li>CSS Element Selector</li>
+          <li>CSS Id Selector</li>
+          <li>CSS Class Selector</li>
+          <li>CSS Universal Selector</li>
+          <li>CSS Group Selector</li>
+
+        </ul>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+    </div>
+  </div>
 
 
 
-<!--     <p>
+
+
+  <!--     <p>
      
 render() {
 return (
@@ -106,5 +192,13 @@ products = ["car" , "bike"]
 Rita Bala4:13 PM
 console.log(false == '0') 
     </p> -->
-  </body>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
